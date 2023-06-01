@@ -1,0 +1,17 @@
+<table border=1>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    {% for cr in courses %}
+    <tr>
+        <td>{{cr.name}}</td>
+        <td>{{cr.Duration}}</td>
+        
+    </tr>
+
+    {% endfor %}
+
+</table>

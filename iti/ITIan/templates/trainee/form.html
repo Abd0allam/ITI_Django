@@ -1,0 +1,22 @@
+<table border=1>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    {% for tr in trainee %}
+    <tr>
+        <td>{{tr.first_name}}</td>
+        <td>{{tr.last_name}}</td>
+        <td>{{tr.age}}</td>
+        <td>{{tr.course_id}}</td>
+        <td><a href="/delete/{{tr.id}}">Delete</a></td>
+        <td><a href="/edit/{{tr.id}}">Edit</a></td>
+    </tr>
+
+    {% endfor %}
+
+</table>

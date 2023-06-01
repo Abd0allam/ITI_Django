@@ -1,0 +1,7 @@
+<h1>Add new Trainee</h1>
+<form method='POST'>
+    {% csrf_token %}
+    {{tr_form.as_p}}
+    <button type="submit">Save</button>
+    <button tyoe="rest">Clear</button>
+</form>
